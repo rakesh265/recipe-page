@@ -34,7 +34,7 @@ body {
 
 .container {
   background-color: var(--White);
-  height: 1000px;
+  height: 1670px;
   width: 730px;
   padding: 40px;
   border-radius: 25px;
@@ -46,17 +46,94 @@ body {
   border-radius: 10px;
 }
 
-.recipe-title{
+.recipe-title {
   padding: 20px 0px;
   font-size: 40px;
   font-family: var(--young-serif);
+  color: var(--Dark-Charcoal);
 }
 
-.recipe-description{
+.recipe-description {
   padding-bottom: 30px;
+  color: var(--Wenge-Brown);
 }
 
-.info-section{
+.info-section {
   background-color: var(--Rose-White);
-  height: 120px;
+  height: 180px;
+  padding: 25px;
+  border-radius: 15px;
 }
+
+.info-heading {
+  font-size: 20px;
+  color: var(--Dark-Raspberry);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.info-section ul {
+  padding-left: 25px;
+}
+
+.info-section li {
+  color: var(--Wenge-Brown);
+  line-height: 30px;
+  padding-left: 15px;
+}
+.info-section li::marker{
+  color: var(--Dark-Raspberry);
+}
+
+.sub-heading {
+  font-family: var(--young-serif);
+  font-size: 25px;
+  color: var(--Nutmeg);
+}
+
+.ingredients-section, .instructions-section, .nutrition-section{
+  padding: 25px 0px;
+  line-height: 30px;
+}
+
+.ingredients-section ul, .instructions-section ol {
+  padding: 20px 20px 0px;
+}
+
+.ingredients-section li, .instructions-section li {
+  padding-left: 15px;
+  color: var(--Wenge-Brown);
+}
+
+.ingredients-section li::marker, .instructions-section li::marker{
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+
+.table-description{
+  padding: 15px 0px  10px;
+  color: var(--Wenge-Brown);
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+.nutrition-table td {
+  padding: 8px 30px;
+  color: var(--Wenge-Brown);
+}
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--Light-Grey); 
+}
+.nutrition-table td:nth-child(2){
+  font-weight: 700;
+  color: var(--Nutmeg); 
+}
+
+hr{
+  border: none; 
+  height: 1px; 
+  background-color: var(--Light-Grey);
+}
+
