@@ -23,8 +23,7 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: var(--Eggshell);
   display: grid;
   place-items: center;
@@ -35,14 +34,14 @@ body {
 .container {
   background-color: var(--White);
   height: 1670px;
-  width: 730px;
+  max-width: 730px;
   padding: 40px;
   border-radius: 25px;
 }
 
 .recipe-img {
   height: 300px;
-  width: 650px;
+  max-width: 650px;
   border-radius: 10px;
 }
 
@@ -137,3 +136,69 @@ hr{
   background-color: var(--Light-Grey);
 }
 
+@media (max-width: 425px) {
+  body {
+    padding:  0;
+  }
+
+  .container {
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .recipe-img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .recipe-title {
+    font-size: 30px;
+  }
+
+  .info-section {
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .info-heading {
+    font-size: 18px;
+  }
+
+  .info-section ul {
+    padding-left: 15px;
+  }
+
+  .info-section li {
+    line-height: 25px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+  }
+
+  .ingredients-section, .instructions-section, .nutrition-section {
+    padding: 20px 0;
+    line-height: 25px;
+  }
+
+  .ingredients-section ul, .instructions-section ol {
+    padding: 15px 15px 0;
+  }
+
+  .ingredients-section li, .instructions-section li {
+    padding-left: 10px;
+  }
+
+  .table-description {
+    padding: 10px 0 5px;
+  }
+
+  .nutrition-table td {
+    padding: 5px 15px;
+  }
+}
